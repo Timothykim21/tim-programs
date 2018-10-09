@@ -3,16 +3,14 @@ import java.util.PrimitiveIterator;
 public class student {
     private String studentNameFirst;
     private String studentNameLast;
-    private String courses;
     private int studentNum;
     private int grade;
 
-    public student(String studentNameFirst, String studentNameLast, int studentNum, int grade, String courses){
+    public student(String studentNameFirst, String studentNameLast, int studentNum, int grade){
         this.studentNameFirst = studentNameFirst;
         this.studentNameLast = studentNameLast;
         this.studentNum = studentNum;
         this.grade = grade;
-        this.courses = courses;
 
 
     }
@@ -32,14 +30,6 @@ public class student {
 
     public void setStudentNameLast(String studentNameLast) {
         this.studentNameLast = studentNameLast;
-    }
-
-    public String getCourses() {
-        return courses;
-    }
-
-    public void setCourses(String courses) {
-        this.courses = courses;
     }
 
     public int getStudentNum() {
