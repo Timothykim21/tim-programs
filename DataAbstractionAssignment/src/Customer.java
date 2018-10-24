@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.Contract;
+
 import javax.security.sasl.SaslClient;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,7 +19,15 @@ public class Customer {
     Customer(){
         //create default constructor
     }
+
+
+
     Customer(String name, int accountNumber, double checkDeposit, double savingDeposit){
+        this.name;
+        this.accountNumber;
+        this.deposit();
+        this.withdraw();
+
         //constructor code here
     }
 
@@ -29,6 +39,7 @@ public class Customer {
         //your code here
         return 0;
     }
+    @Contract(pure = true)
     private boolean checkOverdraft(double amt, String account){
         //your code here
         return false;
